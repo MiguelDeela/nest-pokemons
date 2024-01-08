@@ -50,6 +50,30 @@ docker-compose up -d
 npm i @nestjs/mongoose mongoose
 ```
 
+6. Reconstruir la base de datos con la semilla
+```
+http://localhost:3000/api/v2/seed
+```
+
+7. Instalar variable de entorno
+```
+npm i @nestjs/config
+```
+
+8. Configurar variable de entorno en imports de app.module.ts
+```
+ConfigModule.forRoot()
+```
+
+9. Instalar joi
+```
+npm i joi
+```
+
+10. Clonar el archivo __.env.template__ y renombrar la copia a __.env__
+
+11. Llenar las variables de entorno definidas en el ```.env```
+
 ## Stack usado
 * MongoDB
 * Nest
